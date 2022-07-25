@@ -10,12 +10,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">    
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
     <title>Sushanta</title>
     
 </head>
 <body onkeydown="closetoggel()" >
 
+<div  class="media1">
+    <span><a href="https://www.facebook.com/sushanta.neupane.5/"><i class="uil uil-facebook-f"></i></a></span>
+    <span><a href="https://www.github.com/sushanta902"><i class="uil uil-github"></i></a></span>
+    <span><a href="https://www.youtube.com/channel/UCil0CPV624-BWcPIN5ou_pg"><i class="uil uil-youtube"></i></a></span>
 
+</div>
 
 <!-- navbar  -->
     <div id="navbar" class="navbar">
@@ -93,7 +100,7 @@
             </div>
 
             <div class="about_img">
-                <img src="./asserts/about.jpg" alt="" srcset="">
+                <img src="./asserts/about1.png" alt="" srcset="">
             </div>
 
             <div class="about_detail">
@@ -106,7 +113,7 @@
                 <div>  <span> 0+</span><br>Company</div>
             </div>      
             <br class="mob">    <br class="mob">
-            <div class="cv"><a href="./asserts/home.png"><button>Download CV <i class="uil uil-import"></i></button></a></div>
+            <div class="cv"><a href="./asserts/cv.pdf" download><button>Download CV <i class="uil uil-import"></i></button></a></div>
 
         </div>
 
@@ -364,13 +371,28 @@
     <div type="section" id="contact" class="contact">
         <div class="contact_container">
 
-            <div class="form">
+            <div class="form" >
                 <div class="heading">CONTACT ME</div>
                 <div class="subheading">Get in touch with me</div>
-                <input type="text"  placeholder="Enter your name">
-                <input type="email" placeholder="Enter your email">
-                <textarea rows="10" resize="none" id="msg-form" placeholder=" Measseges here..." ></textarea>
+                <form
+                action="https://formspree.io/f/mpzoonvr"
+                method="POST"
+              >
+
+                  <input placeholder="Enter email" type="email" required name="email">
+
+
+
+
+                <input placeholder="Enter name" type="text" required name="name">
+
+
+
+                  <textarea placeholder="Enter message" required name="message"></textarea>
+
+
                 <button type="submit">Send</button>
+              </form>
             </div>
         </div>
     </div>
@@ -382,10 +404,9 @@
 
 <div class="footer">
     <div class="media">
-        <i onclick="window.open('https:\\facebook.com')" class="uil uil-facebook-f"></i>
-        <i onclick="window.open('https:\\instagram.com')" class="uil uil-instagram-alt"></i>
-        <i onclick="window.open('https:\\twitter.com')" class="uil uil-twitter"></i>
-        <i onclick="window.open('https:\\github.com')" class="uil uil-github"></i>
+        <i onclick="window.open('https:\\facebook.com/sushanta.neupane.5')" class="uil uil-facebook-f"></i>
+        <i onclick="window.open('https:\\www.instagram.com/sushanta_neupane')" class="uil uil-instagram-alt"></i>
+        <i onclick="window.open('https:\\github.com/sushanta902')" class="uil uil-github"></i>
     </div><br>
     <div class="decreaser">
         <div class="footer_links">

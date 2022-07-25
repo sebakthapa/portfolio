@@ -22,8 +22,21 @@ body{
     color: var(--textcolor);
 }
 
+.media1
+{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    font-size: 2rem;
+    z-index: 99999;
+    top:40%;
+    left: 3rem;
+}
 
-
+.media1 a
+{
+    color: var(--textcolor);
+}
 
 
 ::-webkit-scrollbar {
@@ -219,6 +232,7 @@ body{
     display: grid;
     width: 80%;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 10rem 10rem 10rem 10rem;
     grid-template-areas: 
     "img heading"
     "img detail"
@@ -244,6 +258,9 @@ body{
     width: 30rem;
     border-radius: 20px;
     margin-bottom: 2rem;
+    height: 8
+    0%;
+    overflow: hidden;
     grid-area: img;
 }
 
@@ -880,6 +897,8 @@ input[type=range]:hover + .range_value_show{
 
 
 
+
+
   .contact::before
   {
     content: '';
@@ -909,6 +928,16 @@ input[type=range]:hover + .range_value_show{
     padding-top:10rem ;
   }
 
+  .contact .form form
+  {
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+
   .form > *{
     margin-top: 2rem;
   }
@@ -934,9 +963,11 @@ input[type=range]:hover + .range_value_show{
   .contact input 
   {
     height: 4rem;
-    background-color:#001d2c;
-
+    background-color:#005986;
+    color: white;
     padding-left: 20px;
+    margin-top  : 20px;
+    width: 100%;
     border-radius: 5px;
     border: none;
     outline: none;
@@ -957,7 +988,11 @@ input[type=range]:hover + .range_value_show{
   {
     height: 4rem;
     border-radius: 20px;
-    background-color: #001d2c;
+    margin-top  : 20px;
+    width: 100%;
+    color: white;
+
+    background-color: #005986;
     resize: none    ;
     padding: 15px;
     border: none;
@@ -993,6 +1028,8 @@ input[type=range]:hover + .range_value_show{
     text-align: center;
     text-decoration: none;
     cursor: pointer;
+    margin-top  : 20px;
+    width: 100%;
     border-radius: 20px;
     font-weight: 600;
   }
@@ -1158,6 +1195,8 @@ font-size: 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
+    height: 40rem;
 }
 
 .cards 
@@ -1228,7 +1267,10 @@ font-size: 2rem;
     transition: all .2s;
 }
 
-
+.media1
+{
+    display: none;
+}
 .modes
 {
     position: relative;
@@ -1245,7 +1287,7 @@ font-size: 2rem;
     }
     .home
     {
-
+        margin-bottom: 10rem;
         flex-direction: column-reverse;
         justify-content: center;
         padding-left: 50px;

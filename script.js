@@ -254,3 +254,16 @@ window.onscroll = function(e) {
   }
 
 
+function formdata()
+{
+    var name  = document.querySelectorAll('input[type="text"]')[0].value;
+    var email  = document.querySelectorAll('input[type="email"]')[0].value;
+    var body  = document.querySelectorAll('textarea')[0].value;
+    var maillink = document.getElementById('maillink').href = `mailto:sushantaneupane123@gamil.com?subject=Contact by ${name}. &body=${body}`
+    
+}
+
+function sendMail()
+{
+    alert("Sent!")
+}
