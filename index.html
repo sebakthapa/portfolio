@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="./asserts/avatar.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Sushanta</title>
+    
+</head>
+<body onkeydown="closetoggel()" >
+
+
+
+<!-- navbar  -->
+    <div id="navbar" class="navbar">
+        <div class="topheader">
+        <div class="modes" onclick="modetoggle()">
+            <svg class="svg-icon" viewBox="0 0 20 20">
+                <path fill="none" d="M10,0.625c-5.178,0-9.375,4.197-9.375,9.375S4.822,19.375,10,19.375s9.375-4.197,9.375-9.375S15.178,0.625,10,0.625 M10,18.522V1.478c4.707,0,8.522,3.815,8.522,8.522S14.707,18.522,10,18.522"></path>
+            </svg>
+        </div>
+
+            <div class="logo">Sushanta</div> 
+
+            <div class="mob ham" id="ham" onclick="mobtoggel()"><i class="uil uil-bars"></i> <br></div>
+        </div>
+
+        <div class="nav_links">
+            <ul>
+               <a class="linkpointer " href="#home"> <li ><i class="mob uil uil-estate"></i><br> Home</li></a>
+               <a class="linkpointer" href="#about"> <li><i class="mob uil uil-user-circle"></i> <br> About</li></a>
+               <a class="linkpointer" href="#skills"> <li> <i class="mob uil uil-brain"></i><br> Skills</li></a>
+               <a class="linkpointer" href="#timeline"> <li><i class="mob uil uil-postcard"></i> <br>Timeline</li></a>
+               <a class="linkpointer" href="#services"> <li><i class="mob uil uil-user-arrows"></i> <br> Services</li></a>
+               <a class="linkpointer" href="#contact"> <li><i class="mob uil uil-fast-mail"></i> <br>Contact</li></a>
+            </ul>
+        </div>
+    </div>
+
+
+
+
+
+<div class="container" onclick="closetoggel()">
+
+
+
+    <!-- home -->
+
+    <div type="section" id = "home" class="home">
+        <div class="contain">
+            <div class="greeting">Hi, I'm Sushanta</div> 
+            <div class="tag">Frontend Developer</div><br>
+            <div class="description">I am a student with web design and development knowledge.</div>
+            <br>
+            <a href="mailto://sushantaneupane123@gmail.com" target="_blank" rel="noopener noreferrer">
+                <button class="contact_but">
+                    Contact Me <i class="uil uil-message"></i>
+                </button>
+            </a>
+
+
+        </div>
+        
+        <div  class="img">
+            
+        </div>
+    </div>
+
+
+    <div id="onescroll" class="wide" onclick="window.scroll({
+        top: screen.height-100,
+        left: 0,
+        behavior: 'smooth'
+      })" style="font-size: 1.3rem;position: absolute; left: 10rem;overflow: hidden;transition: all .2s;cursor: pointer;" class="helper">Scroll to explore<i class="uil uil-mouse-alt"></i></div>
+
+
+   <!-- about  -->
+
+    <div id="about" type="section" class="about">
+
+       
+        <div class="about_contain">
+            <div  class="about_heading">
+                <div class="heading"> About Me</div>
+                <div class="tag">Indroduction</div><br>
+            </div>
+
+            <div class="about_img">
+                <img src="./asserts/about.jpg" alt="" srcset="">
+            </div>
+
+            <div class="about_detail">
+                    Energetic and passionate college student studying toward a Bsc.Csit. Aim to use knowledge of Web development in a proper and efficient way.
+            </div>
+
+            <div class="work_detail">
+                <div> <span>02+</span><br> Year Experience </div>
+                <div>  <span>05+</span> <br> Project</div>
+                <div>  <span> 0+</span><br>Company</div>
+            </div>      
+            <br class="mob">    <br class="mob">
+            <div class="cv"><a href="./asserts/home.png"><button>Download CV <i class="uil uil-import"></i></button></a></div>
+
+        </div>
+
+
+
+    </div>
+
+
+
+
+    <div type="section" class="skills" id="skills">
+        
+
+        <div class="heading">
+            <div class="main">
+                Skills
+                
+            </div>
+
+        </div>
+
+        <div class="skill_container">
+
+
+            <div class="skill_div" onclick="focus_skill(this)">
+                <div class="skill_category">
+                   <span> <i class="uil uil-brackets-curly"></i> Frontend </span> <span><i class="uil uil-angle-down"></i></span>
+                </div>
+                <div id="open" class="closer">
+                    <div class="skill_data">
+                        <div class="skill_name"><span>HTML</span> <span>80%</span></div>
+                        <div class="skill_percentage"   >
+                            <div class="percentage_cover html"></div>             
+                        </div>
+                        
+                    </div>
+    
+                    <div class="skill_data">
+                        <div class="skill_name"><span>Css</span> <span>75%</span></div>
+                        <div class="skill_percentage">
+                            <div class="percentage_cover css"   ></div>             
+                        </div>
+                        
+                    </div>
+    
+                    <div class="skill_data">
+                        <div class="skill_name"><span>Javascript</span> <span>70%</span></div>
+                        <div class="skill_percentage">
+                            <div class="percentage_cover js"   ></div>             
+                        </div>
+                        
+                    </div>
+    
+                </div>
+
+
+            </div>
+
+
+
+            <div class="skill_div" onclick="focus_skill(this)">
+                <div class="skill_category">
+                    <span> <i class="uil uil-server-network"></i> Backend </span> <span><i class="uil uil-angle-down"></i></span>
+
+                </div>
+
+                <div id="close" class="closer">
+                    <div class="skill_data">
+                        <div class="skill_name"><span>Nodejs</span> <span>45%</span></div>
+                        <div class="skill_percentage">
+                            <div class="percentage_cover node"   ></div>             
+                        </div>
+                        
+                    </div>
+                    <div class="skill_data">
+                        <div class="skill_name"><span>Python</span> <span>50%</span></div>
+                        <div class="skill_percentage"   >
+                            <div class="percentage_cover py"></div>             
+                        </div>
+                        
+                    </div>
+    
+    
+                    <div class="skill_data">
+                        <div class="skill_name"><span>PHP</span> <span>40%</span></div>
+                        <div class="skill_percentage">
+                            <div class="percentage_cover php"   ></div>             
+                        </div>
+                        
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+
+
+
+
+            <div class="skill_div" onclick="focus_skill(this)">
+                <div class="skill_category">
+                    <span><i class="uil uil-palette"></i> Others </span> <span><i class="uil uil-angle-right"></i></span>
+                </div>
+                <div id="close" class="closer">
+                    <div class="skill_data">
+                        <div class="skill_name"><span>My SQL</span> <span>50%</span></div>
+                        <div class="skill_percentage"   >
+                            <div class="percentage_cover sql"></div>             
+                        </div>
+                        
+                    </div>
+    
+                    <div class="skill_data">
+                        <div class="skill_name"><span>Mongo DB</span> <span>30%</span></div>
+                        <div class="skill_percentage">
+                            <div class="percentage_cover mongo"   ></div>             
+                        </div>
+                        
+                    </div>
+    
+                    <div class="skill_data">
+                        <div class="skill_name"><span>Photoshop</span> <span>50%</span></div>
+                        <div class="skill_percentage">
+                            <div class="percentage_cover ps"   ></div>             
+                        </div>
+                        
+                    </div>
+
+                </div>
+
+
+
+            </div>
+        </div>
+
+    </div>
+
+    <div type="section" class="tree" id="timeline">
+        <div class="header" > Timeline</div>
+        <div class="sub">Check out my timeline</div>
+
+<!-- work  -->
+        <div  style="display: none;" class="chooser" >
+            <button onclick="timeline_button(this)" class="timeline_button active_button"  id="academic_button">Academic</button>
+            <button onclick="timeline_button(this)" class="timeline_button passive_button" id="work_button">Work</button>  
+        </div>
+<!-- work  -->
+
+
+        <div class="data_container">
+            <div class="helper">Slide to explore <i style="font-size: 3rem;" class="uil uil-slider-h"></i></div><br>
+            <input  type="range" min="0" max="18" value="2" oninput="outputUpdate(this)" name="ranger" id="ranger" class="ranger">
+            <div  class="range_value_show" ></div>
+        </div>
+
+        <div class="screen" id="academic">
+
+            <div class="card"  year="0">
+                
+                <div class="heading"> <i class="uil uil-baby-carriage"></i> Born</div>
+                <div class="subheading">16th October 2004</div>
+                <div class="event_detail">Gorkha </div>
+                <div class="year_time">2061 BS</div>
+            </div>
+            <div class="card"  year="12">
+                <div class="heading"> <i class="uil uil-backpack"></i> Primary Education</div>
+                <div class="subheading">10 years</div>
+                <div class="event_detail">Prena Higher Secondary School:- 2yrs <br> Holy garden School :-2yrs <br> Adventure School: 2yrs <br> Sainik Awasiya Mahavidlaya Chitwan: 4yrs </div>
+                <div class="year_time">2006-2016</div>
+            </div>
+
+            <div class="card"  year="13">
+                <div class="heading"><i class="uil uil-edit-alt"></i> BLE appeared</div>
+                <div class="subheading">3.56 GPA</div>
+                <div class="event_detail">From Sainik Awasiya Mahavidlaya Chitwan</div>
+                <div class="year_time">2017</div>
+            </div>
+            <div class="card"  year="15">
+                <div class="heading"><i class="uil uil-edit"></i> SEE appeared</div>
+                <div class="subheading">3.85 GPA</div>
+                <div class="event_detail">From Sainik Awasiya Mahavidlaya Chitwan</div>
+                
+                <div class="year_time">2019 <i class="uil uil-coronavirus"></i> </div>
+            </div>
+            <div class="card"  year="17">
+                <div class="heading"><i class="uil uil-university"></i> +2 appeared</div>
+                <div class="subheading">3.85 GPA</div>
+                <div class="event_detail">Passed Out From Sainik Awasiya Mahavidlaya Chitwan</div>
+                <div class="year_time">2021</div>
+            </div>
+        </div>
+
+        <div class="screen" id="work">
+
+            Not Yet
+
+        </div>
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+    <div type="section" id="services" class="services">
+        <div class="service_container">
+        <div class="service_all_heading"> 
+            <div class="heading">Services<div class="subheading">My skill in your product</div></div>
+            
+        </div>
+
+    
+
+            <div class="cards">
+                <div class="card-grid">
+                    <div class="icon"><i class="uil uil-browser"></i></div>
+                    <div>
+                        <div class="header">Web Development</div>
+                        <div class="detail">I create web site for you.</div>
+                    </div>
+
+                </div>
+                <div class="card-grid">
+                    <div class="icon"><i class="uil uil-apps"></i></div>
+                    <div>
+
+                        <div class="header">App Development</div>
+                        <div class="detail">I create app in flutter.</div>
+                    </div>
+                </div>
+                <div class="card-grid">
+                    <div class="icon"><i class="uil uil-image-resize-landscape"></i></div>
+                    <div>
+                        <div class="header">Graphic Desigining</div>
+                        <div class="detail">I edit and create photo and videos.</div>
+                    </div>
+                </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+    <div type="section" id="contact" class="contact">
+        <div class="contact_container">
+
+            <div class="form">
+                <div class="heading">CONTACT ME</div>
+                <div class="subheading">Get in touch with me</div>
+                <input type="text"  placeholder="Enter your name">
+                <input type="email" placeholder="Enter your email">
+                <textarea rows="10" resize="none" id="msg-form" placeholder=" Measseges here..." ></textarea>
+                <button type="submit">Send</button>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+<div class="footer">
+    <div class="media">
+        <i onclick="window.open('https:\\facebook.com')" class="uil uil-facebook-f"></i>
+        <i onclick="window.open('https:\\instagram.com')" class="uil uil-instagram-alt"></i>
+        <i onclick="window.open('https:\\twitter.com')" class="uil uil-twitter"></i>
+        <i onclick="window.open('https:\\github.com')" class="uil uil-github"></i>
+    </div><br>
+    <div class="decreaser">
+        <div class="footer_links">
+            <a href="#home"> <li> Home</li></a>
+            <a href="#about"> <li> About</li></a>
+            <a href="#skills"> <li> Skills</li></a>
+            <a href="#timeline"> <li>Timeline</li></a>
+            <a href="#services"> <li> Services</li></a>
+            <a href="#contact"> <li>Contact</li></a>
+        </div>
+    </div>
+<br>
+
+
+    <div style="color:#e7f1fb">Sushanta Neupane © 2022</div>
+</div>
+
+
+
+<div class="upbutton" id="scroller" onclick="window.scroll({
+    top: 0,
+    left: 0,
+    behavior: 'smooth'
+  })">
+    <i class="uil uil-angle-double-up"></i>
+</div>
+</body>
+<script src="./script.js"></script>
+
+</html>
