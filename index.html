@@ -10,13 +10,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">    
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <script src="https://smtpjs.com/v3/smtp.js">
+    <script src="https://smtpjs.com/v3/smtp.js">   
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <title>Sushanta</title>
     
 </head>
 <body onkeydown="closetoggel()" >
-
+   <!-- realtime typing animation integrate -->
+   <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>  
 <div  class="media1">
     <span><a href="https://www.facebook.com/sushanta.neupane.5/"><i class="uil uil-facebook-f"></i></a></span>
     <span><a href="https://www.github.com/sushanta902"><i class="uil uil-github"></i></a></span>
@@ -54,15 +56,15 @@
 
 
 
+
 <div class="container" onclick="closetoggel()">
-
-
+    
 
     <!-- home -->
 
     <div type="section" id = "home" class="home">
         <div class="contain">
-            <div class="greeting">Hi, I'm Sushanta</div> 
+            <div id="typing" class="greeting"></div> 
             <div class="tag">Student</div><br>
             <div class="description">I am a student enthusiastic in web design and development .</div>
             <br>
@@ -79,6 +81,15 @@
             
         </div>
     </div>
+    <script>
+    new Typewriter('#typing', {
+        strings: ['Hi,', 'I am Sushanta'],
+        autoStart: true,
+        smartBackspace: true,
+        loop: true
+      });
+      
+    </script>
 
 
     <div id="onescroll" class="wide" onclick="window.scroll({

@@ -13,6 +13,11 @@ var work = document.getElementById('work')
 const sections = document.querySelectorAll("[type='section']");
 const navLi = document.querySelectorAll(".linkpointer");
 
+// import Typewriter from 'typewriter-effect/dist/core';
+
+
+
+
 var lastScrollTop = 0;
 window.addEventListener('scroll', (event) => {
     var st = window.pageYOffset || document.documentElement.scrollTop; 
